@@ -9,11 +9,9 @@ public class NovoProduto {
 		
 		DAO<Produto> dao = new DAO(Produto.class);
 		
-		Produto produto = new Produto("Curso Analista de Gráfico", 2000.00);
+		Produto produto = new Produto("Mentoria 2 meses", 2000.00);
 		
-		dao.incluirAtomico(produto);
-		
-		dao.fechar();
+		dao.incluirAtomico(produto).fechar();
 
 	}
 
